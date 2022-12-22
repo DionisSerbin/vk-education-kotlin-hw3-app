@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">vk-education-kotlin-hw3-app</string>
+    <string name="logo_text">Тут лого</string>
+    <string name="fooder">Fooder</string>
+    <string name="add_mail">Введите почту</string>
+    <string name="add_password">Введите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="not_register">Еще не зарегистрированы? Жмите сюда</string>
+    <string name="add_password_again">Введите пароль еще раз</string>
+    <string name="already_register">Уже зарегистрированы? Жмите сюда</string>
+    <string name="change_products">Измените список\nпродуктов</string>
+    <string name="what_dish">Что сегодня готовим?</string>
+    <string name="pick_dish">Подобрать блюдо!</string>
+    <string name="done">Готово</string>
+    <string name="search">Поиск по продуктам...</string>
+    <string name="no_found">Пока что блюда закончились</string>
+    <string name="hello_user">Привет, User!</string>
+    <string name="log_out">Выйти</string>
+    <string name="last_dishes">Последние рецепты</string>
+    <string name="no_favourite_dishes">У вас пока нет любимых блюд</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

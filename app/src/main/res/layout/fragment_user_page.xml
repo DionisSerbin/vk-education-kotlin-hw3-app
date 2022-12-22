@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".user.page.UserPageFragment">
+
+    <LinearLayout
+        android:id="@+id/up_bar_user_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_screen"
+        android:layout_marginTop="@dimen/margin_screen"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/hello_user"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:text="@string/hello_user"
+            android:textColor="@color/dark_color"
+            android:textSize="@dimen/text_large_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/log_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:backgroundTint="@color/white_color"
+            android:elevation="@dimen/box_shadow_elevation"
+            android:scaleX="@integer/scale_button"
+            android:scaleY="@integer/scale_button"
+            android:text="@string/log_out"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_small_size"
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/ShapeButton" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/last_dishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_screen"
+        android:layout_marginTop="@dimen/margin_box"
+        android:text="@string/last_dishes"
+        android:textColor="@color/dark_color"
+        android:textSize="@dimen/text_small_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_bar_user_page" />
+
+    <TextView
+        android:id="@+id/no_fav_dishes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_favourite_dishes"
+        android:textColor="@color/dark_color"
+        android:textSize="@dimen/text_small_size"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_dishes_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_size"
+        android:paddingTop="@dimen/padding_box_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_dishes" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_user_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:endColor="@color/orange_color"
+        android:startColor="@color/orange_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

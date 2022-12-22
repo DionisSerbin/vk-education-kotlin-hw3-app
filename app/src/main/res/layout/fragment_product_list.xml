@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".products.by.category.ProductListFragment">
+
+
+    <TextView
+        android:id="@+id/product_name_by_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_screen"
+        android:layout_marginTop="@dimen/margin_screen"
+        android:paddingBottom="@dimen/margin_fooder"
+        android:textColor="@color/dark_color"
+        android:textSize="@dimen/text_large_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_screen"
+        android:layout_marginTop="@dimen/margin_fooder"
+        android:layout_marginBottom="@dimen/margin_box"
+        android:backgroundTint="@color/orange_color"
+        android:elevation="@dimen/box_shadow_elevation"
+        android:paddingVertical="@dimen/padding_box_vertical"
+        android:text="@string/done"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/corner_box_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeButton" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_by_category" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:endColor="@color/orange_color"
+        android:startColor="@color/orange_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

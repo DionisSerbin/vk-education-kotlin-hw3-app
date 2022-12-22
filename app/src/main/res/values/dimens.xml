@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_logo_radius">40dp</dimen>
+    <dimen name="corner_box_radius">12dp</dimen>
+
+    <dimen name="padding_logo_vertical">60dp</dimen>
+    <dimen name="padding_logo_horizontal">30dp</dimen>
+    <dimen name="padding_button_vertical">10dp</dimen>
+    <dimen name="padding_button_horizontal">40dp</dimen>
+    <dimen name="padding_small_horizontal">10dp</dimen>
+    <dimen name="padding_box_vertical">16dp</dimen>
+    <dimen name="padding_top_dish_by_user_text">8dp</dimen>
+
+    <dimen name="margin_logo_top">160dp</dimen>
+    <dimen name="margin_fooder">20dp</dimen>
+    <dimen name="margin_screen">20dp</dimen>
+    <dimen name="margine_screen_small">10dp</dimen>
+    <dimen name="margin_box">10dp</dimen>
+    <dimen name="margin_button_rewind">50dp</dimen>
+
+    <dimen name="text_medium_size">20sp</dimen>
+    <dimen name="text_large_size">25sp</dimen>
+    <dimen name="text_small_size">15sp</dimen>
+
+    <dimen name="scale_button">0.8</dimen>
+
+    <dimen name="box_shadow_elevation">10dp</dimen>
+    <dimen name="card_dish_shadow_elevation">20dp</dimen>
+
+    <dimen name="zero_size">0dp</dimen>
+    <dimen name="dish_by_user_height">100dp</dimen>
+    <dimen name="search_button_size">55dp</dimen>
+
+</resources>

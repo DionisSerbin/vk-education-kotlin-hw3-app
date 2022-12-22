@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/up_bar_tinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_screen"
+            android:layout_marginTop="@dimen/margin_screen"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/change_products"
+                android:layout_width="@dimen/zero_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:text="@string/what_dish"
+                android:textColor="@color/dark_color"
+                android:textSize="@dimen/text_large_size"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/white_color"
+                android:elevation="@dimen/box_shadow_elevation"
+                android:scaleX="@integer/scale_button"
+                android:scaleY="@integer/scale_button"
+                app:icon="@drawable/ic_baseline_filter_alt_24" />
+
+
+        </LinearLayout>
+
+        <com.yuyakaido.android.cardstackview.CardStackView
+            android:id="@+id/card_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_size"
+
+            android:layout_weight="5"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_screen"
+            android:layout_marginBottom="@dimen/margin_screen"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/rewind_button"
+                android:layout_width="@dimen/zero_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_button_rewind"
+                android:backgroundTint="@color/white_color"
+                android:elevation="@dimen/box_shadow_elevation"
+                android:scaleX="@integer/scale_button"
+                android:scaleY="@integer/scale_button"
+                app:icon="@drawable/rewind_blue_24dp"
+                app:iconTint="@color/black_color" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/skip_button"
+                android:layout_width="@dimen/zero_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_screen"
+                android:backgroundTint="@color/white_color"
+                android:elevation="@dimen/box_shadow_elevation"
+                app:icon="@drawable/ic_baseline_close_24"
+                app:iconTint="@color/red_color" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/like_button"
+                android:layout_width="@dimen/zero_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:backgroundTint="@color/white_color"
+                android:elevation="@dimen/box_shadow_elevation"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconTint="@color/orange_color" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_dish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:endColor="@color/orange_color"
+        android:startColor="@color/orange_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dishes_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_found"
+        android:textColor="@color/dark_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

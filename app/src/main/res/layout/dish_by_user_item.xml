@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_dish_by_user"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dish_by_user_height"
+    android:layout_marginHorizontal="@dimen/margin_screen"
+    android:layout_marginTop="@dimen/margine_screen_small"
+    android:layout_marginBottom="@dimen/margine_screen_small"
+    app:cardBackgroundColor="@color/white_color"
+    app:cardCornerRadius="@dimen/corner_box_radius"
+    app:cardElevation="@dimen/box_shadow_elevation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dish_by_user_image"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|start"
+            android:layout_weight="4"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/dish_by_user_name"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+            android:paddingStart="@dimen/padding_small_horizontal"
+            android:paddingTop="@dimen/padding_top_dish_by_user_text"
+            android:textColor="@color/dark_color"
+            android:textSize="@dimen/text_small_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/dish_by_user_like_button"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:backgroundTint="@color/white_color"
+            android:elevation="@dimen/box_shadow_elevation"
+            android:scaleX="@integer/scale_button_y"
+            android:scaleY="@integer/scale_button_y"
+            app:icon="@drawable/ic_baseline_favorite_24"
+            app:iconTint="@color/orange_color" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

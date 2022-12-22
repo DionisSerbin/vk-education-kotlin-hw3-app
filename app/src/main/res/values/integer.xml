@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scale_button" format="float" type="integer">0.8</item>
+    <item name="scale_button_y" format="float" type="integer">0.5</item>
+    <item name="scale_arrow" format="float" type="integer">0.8</item>
+    <item name="scale_inc_button" format="float" type="integer">4</item>
+</resources>

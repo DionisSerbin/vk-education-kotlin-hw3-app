@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_screen"
+    android:layout_marginTop="@dimen/margine_screen_small"
+    android:layout_marginBottom="@dimen/margine_screen_small"
+    app:cardBackgroundColor="@color/white_color"
+    app:cardCornerRadius="@dimen/corner_box_radius"
+    app:cardElevation="@dimen/box_shadow_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_product"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_box" />
+
+        <TextView
+            android:id="@+id/product_item"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_box"
+            android:layout_weight="9"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/padding_small_horizontal"
+            android:text="Это жопа"
+            android:textColor="@color/dark_color"
+            android:textSize="@dimen/text_medium_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
