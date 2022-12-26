@@ -20,7 +20,7 @@ class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             checkBox.isChecked = !checkBox.isChecked
         }
 
-        val productName = prod.product_name
+        val productName = prod.productName
         productNameView.text = productName
 
     }

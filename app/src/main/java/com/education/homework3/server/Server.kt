@@ -26,7 +26,7 @@ class Server {
         makeDelay()
         val productList = mutableListOf<ProductDto>()
         for (product in server.Product) {
-            if (product.category_id == categoryId) {
+            if (product.categoryId == categoryId) {
                 productList.add(product)
             }
         }
@@ -37,13 +37,13 @@ class Server {
         makeDelay()
         val dishByUserList = mutableListOf<Int>()
         for (dishByUser in server.UserDish) {
-            if(dishByUser.user_id == userdId) {
-                dishByUserList.add(dishByUser.dish_id)
+            if(dishByUser.userId == userdId) {
+                dishByUserList.add(dishByUser.dishId)
             }
         }
         val dishList = mutableListOf<DishDto>()
         for (dish in server.Dish) {
-            if (dishByUserList.contains(dish.dish_id)){
+            if (dishByUserList.contains(dish.dishId)){
                 dishList.add(dish)
             }
         }

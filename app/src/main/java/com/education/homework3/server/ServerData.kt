@@ -1,42 +1,42 @@
 package com.education.homework3.server
 
 data class UserDto(
-    val user_id: Int,
-    val user_mail: String
+    val userId: Int,
+    val userMail: String
 )
 
 data class CategoryDto(
-    val category_id: Int,
-    val category_name: String
+    val categoryId: Int,
+    val categoryName: String
 )
 
 data class ProductDto(
-    val product_id: Int,
-    val product_name: String,
-    val category_id: Int
+    val productId: Int,
+    val productName: String,
+    val categoryId: Int
 )
 
 data class DishDto(
-    val dish_id: Int,
-    val dish_name: String,
-    val dish_subs: String,
-    val dish_image: String,
-    val minutes: Int
+    val dishId: Int,
+    val dishName: String,
+    val dishSubs: String,
+    val dishImage: String,
+    val dishMinutes: Int
 )
 
 data class UserDishDto(
-    val user_id: Int,
-    val dish_id: Int
+    val userId: Int,
+    val dishId: Int
 )
 
 data class UserProductDto(
-    val user_id: Int,
-    val product_id: Int
+    val userId: Int,
+    val productId: Int
 )
 
 data class DishProductDto(
-    val dish_id: Int,
-    val product_id: Int
+    val dishId: Int,
+    val productId: Int
 )
 
 class ServerData {

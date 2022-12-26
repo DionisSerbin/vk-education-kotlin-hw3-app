@@ -14,13 +14,13 @@ class DishByUserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun bind(dish: DishDto) {
 
-        val dishName = dish.dish_name
-        val dishTime = dish.minutes
+        val dishName = dish.dishName
+        val dishTime = dish.dishMinutes
         val dishText = "$dishName, $dishTime минут"
         dishNameView.text = dishText
 
         Glide.with(dishImage)
-            .load(dish.dish_image)
+            .load(dish.dishImage)
             .into(dishImage)
     }
 }

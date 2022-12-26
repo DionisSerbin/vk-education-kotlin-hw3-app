@@ -15,16 +15,16 @@ class DishViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 
     fun bind(dish: DishDto) {
-        name.text = dish.dish_name
-        val subsText = dish.dish_subs
+        name.text = dish.dishName
+        val subsText = dish.dishSubs
             .subSequence(
                 subsSeqStart,
-                findThreeSpaceNumber(dish.dish_subs)
+                findThreeSpaceNumber(dish.dishSubs)
             ).toString() + "..."
         subs.text = subsText
 
         Glide.with(image)
-            .load(dish.dish_image)
+            .load(dish.dishImage)
             .into(image)
     }
 

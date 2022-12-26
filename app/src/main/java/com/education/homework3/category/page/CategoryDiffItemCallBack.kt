@@ -8,7 +8,7 @@ import com.education.homework3.server.CategoryDto
 class CategoryDiffItemCallBack : DiffUtil.ItemCallback<CategoryDto>() {
     @SuppressLint("DiffUtilEquals")
     override fun areContentsTheSame(oldItem: CategoryDto, newItem: CategoryDto): Boolean {
-        return oldItem.category_name == newItem.category_name
+        return oldItem.categoryName == newItem.categoryName
     }
 
     override fun areItemsTheSame(oldItem: CategoryDto, newItem: CategoryDto): Boolean {

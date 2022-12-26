@@ -19,12 +19,12 @@ class CategoryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         card.setOnClickListener {
             val intent = Intent(card.context, ProductListActivity::class.java)
-            intent.putExtra("category_id", cat.category_id)
-            intent.putExtra("category_name", cat.category_name)
+            intent.putExtra("category_id", cat.categoryId)
+            intent.putExtra("category_name", cat.categoryName)
             card.context.startActivity(intent)
         }
 
-        val categoryName = cat.category_name
+        val categoryName = cat.categoryName
         categoryNameView.text = categoryName
     }
 }
