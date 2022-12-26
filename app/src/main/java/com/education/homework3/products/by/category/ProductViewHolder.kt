@@ -10,9 +10,9 @@ import com.education.homework3.R
 import com.education.homework3.server.ProductDto
 
 class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    protected val productNameView by lazy { view.findViewById<TextView>(R.id.product_item) }
-    protected val cardProd by lazy { view.findViewById<CardView>(R.id.card_product) }
-    protected val checkBox by lazy { view.findViewById<CheckBox>(R.id.checkbox_product) }
+    private val productNameView by lazy { view.findViewById<TextView>(R.id.product_item) }
+    private val cardProd by lazy { view.findViewById<CardView>(R.id.card_product) }
+    private val checkBox by lazy { view.findViewById<CheckBox>(R.id.checkbox_product) }
 
     fun bind(prod: ProductDto) {
 

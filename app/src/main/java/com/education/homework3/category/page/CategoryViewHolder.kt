@@ -12,7 +12,7 @@ import com.education.homework3.server.CategoryDto
 
 
 class CategoryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    protected val categoryNameView by lazy { view.findViewById<TextView>(R.id.category_item) }
+    private val categoryNameView by lazy { view.findViewById<TextView>(R.id.category_item) }
     val card = view.findViewById<CardView>(R.id.card_category)
 
     fun bind(cat: CategoryDto) {

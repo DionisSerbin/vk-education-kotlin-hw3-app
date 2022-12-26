@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class SignInFragment : Fragment() {
 
-    private lateinit var firebaseAuth: FirebaseAuth
+    private var firebaseAuth = FirebaseAuth.getInstance()
 
     override fun onStart() {
         super.onStart()
@@ -36,8 +36,6 @@ class SignInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        firebaseAuth = FirebaseAuth.getInstance()
 
         val notReg = view.findViewById<TextView>(R.id.already_reg)
         notReg.setOnClickListener {
