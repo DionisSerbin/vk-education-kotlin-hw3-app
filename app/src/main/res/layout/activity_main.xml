@@ -26,6 +26,9 @@
         android:foregroundGravity="center"
         android:paddingTop="@dimen/padding_button_vertical"
         app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bnv_tab_item_foreground"
+        android:background="@color/white_color"
+        android:backgroundTintMode="multiply"
 
         />
 </LinearLayout>
