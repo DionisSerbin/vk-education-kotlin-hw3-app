@@ -8,46 +8,40 @@
     android:background="@color/main_color"
     tools:context=".user.page.UserPageFragment">
 
-    <LinearLayout
-        android:id="@+id/up_bar_user_page"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/hello_user"
+        android:layout_width="@dimen/zero_size"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginHorizontal="@dimen/margin_screen"
         android:layout_marginTop="@dimen/margin_screen"
-        android:clipChildren="false"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/hello_user"
+        android:textColor="@color/dark_color"
+        android:textSize="@dimen/text_large_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/log_out_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/hello_user"
-            android:layout_width="@dimen/zero_size"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="9"
-            android:text="@string/hello_user"
-            android:textColor="@color/dark_color"
-            android:textSize="@dimen/text_large_size"
-            android:textStyle="bold" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/log_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginHorizontal="@dimen/margin_screen"
+        android:layout_marginTop="@dimen/margin_screen"
+        android:backgroundTint="@color/white_color"
+        android:elevation="@dimen/box_shadow_elevation"
+        android:scaleX="@integer/scale_button"
+        android:scaleY="@integer/scale_button"
+        android:text="@string/log_out"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_small_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hello_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeButton" />
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/log_out_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|center"
-            android:backgroundTint="@color/white_color"
-            android:elevation="@dimen/box_shadow_elevation"
-            android:scaleX="@integer/scale_button"
-            android:scaleY="@integer/scale_button"
-            android:text="@string/log_out"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_small_size"
-            android:textStyle="bold"
-            app:shapeAppearanceOverlay="@style/ShapeButton" />
-
-    </LinearLayout>
 
     <TextView
         android:id="@+id/last_dishes"
@@ -60,7 +54,7 @@
         android:textSize="@dimen/text_small_size"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_bar_user_page" />
+        app:layout_constraintTop_toBottomOf="@+id/hello_user" />
 
     <TextView
         android:id="@+id/no_fav_dishes_text"
